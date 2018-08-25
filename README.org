@@ -1,0 +1,30 @@
+* Influx
+
+  Run inferior influx process in Emacs to interact with [[https://docs.influxdata.com/influxdb/latest/][Influxdb]]
+
+* Installation
+
+  #+BEGIN_SRC sh
+  git clone http://github.com/Manoj321/influx ~/.emacs.d/site-lisp/influx
+  #+END_SRC
+
+  Add the following to init.el
+  #+BEGIN_SRC emacs-lisp
+  (add-to-list 'load-path "~/.emacs.d/site-lisp/influx/")
+  (require 'influx)
+  #+END_SRC
+
+* Usage
+
+  #+BEGIN_SRC emacs-lisp
+  M-x run-influx
+  #+END_SRC
+
+* License
+
+  [[file:LICENSE][GNU GPLv3.0]]
+
+
+* Credits
+
+  Thanks to [[https://www.masteringemacs.org/article/comint-writing-command-interpreter][Mickey Petersen]] for the awesome tutorial
