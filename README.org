@@ -20,6 +20,16 @@
   M-x run-influx
   #+END_SRC
 
+* Customizations
+
+  Once the package is loaded calling run-influx should automatically connect to
+  influx running on localhost. If influx binary is not in path and you would
+  like to connect to a different server do the following.
+  #+BEGIN_SRC emacs-lisp
+  (setq influx-cli-file-path "/usr/local/bin/influx")
+  (setq influx-cli-arguments '("-host" "server" "-username" "foo" "-password" "bar" "-precision" "rfc3339"))
+  #+END_SRC
+
 * License
 
   [[file:LICENSE][GNU GPLv3.0]]
